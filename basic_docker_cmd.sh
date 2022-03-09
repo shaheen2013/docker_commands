@@ -80,6 +80,7 @@ docker rmi $(docker images -q)
 # container
 docker rm $(docker ps -aq) #Remove all containers
 docker stop $(docker ps -aq) #Stop all running containers
+docker start $(docker ps -aq) # start all containers using one cmd
 docker top 9f215ed0b0d3 #With this command, you can see the top processes within a container.
 docker stop 9f215ed0b0d3 #This command is used to stop a running container.
 docker rm 9f215ed0b0d3 #This command is used to delete a container.
